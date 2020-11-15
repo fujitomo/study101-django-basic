@@ -1,0 +1,71 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+ 
+}
+
+.header-title{
+  color:black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:50px ;
+  background-color:#cc7eb1;
+  height: 100px;
+  font-weight: bold;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+  -webkit-text-stroke: 1px #FFF;
+  text-stroke: 1px #FFF;
+
+}
+
+.container-layout{
+  background-color: #2792c3;
+}
+
+.navi-layout{
+  height:620px;
+  width: 200px;
+  background-color:#4a488c;
+  color:black;
+}
+
+.navi-layout .navi-fontcolor1{
+  color:white ;
+  font-size: 30px;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+
+.navi-layout .navi-fontcolor2{
+  color:white ;
+  font-size: 15px;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+
+.form-area{
+margin: 50px 50px;
+
+}
+
+.container-original{
+  display: flex;
+}
+
+.content{
+  flex: 1;
+}
+
+.control{
+margin: 51px 0;
+font-size: 30px;
+display: flex;
+align-items: center; /* 高さに合わせてボックスの上下中央に配置 */
+}
+
+.padding-labelinput{
+  padding-right:30px;
+}
+

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+登録
+{% endblock header %}
+
+{% block content %}
+<div class="form-area">
+    <p class="control">
+        <label class="padding-labelinput" for="name">名前</label>
+        <input type="text" id="name" placeholder="なもなき鬼">
+    </p>  
+    <p class="control">
+        <label class="padding-labelinput" for="sexRadios">性別</label>
+        <label>
+            <input type="radio" name="sexRadios" id="man" value="0" checked="">
+            男
+        </label>
+        <label>
+            <input type="radio" name="sexRadios" id="woman" value="1" >
+            女
+        </label>
+    </p>
+    <p class="control">
+        <label class="padding-labelinput" for="characteristic">特徴</label>
+        <TEXTAREA id="characteristic" rows="5" cols="40" placeholder="どこにでもいそうな鬼"></TEXTAREA>
+    </p>
+</div>
+{% endblock content %}
