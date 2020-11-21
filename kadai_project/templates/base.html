@@ -36,16 +36,16 @@
           <ul class="accordion nav flex-column">
             <li class="nav-item">
               <a href="#collapse-menu1" class="nav-link navi-fontcolor1" data-toggle="collapse">鬼滅の刃</a>
-              <ul id="collapse-menu1" class="collapse list-unstyled pl-3" data-parent=".accordion">
-                <li><a href="#" class="nav-link navi-fontcolor2">キャラクター登録 </a></li>
-                <li><a href="#" class="nav-link navi-fontcolor2">キャラクター一覧</a></li>
+              <!-- classにcollapseを追加するとアコーディオンメニューになる -->
+              <ul id="collapse-menu1" class="list-unstyled pl-3" data-parent=".accordion">
+                <li><a href="{% url 'create' %}" class="nav-link navi-fontcolor2">キャラクター登録 </a></li>
+                <li><a href="{% url 'list' %}" class="nav-link navi-fontcolor2">キャラクター一覧</a></li>
               </ul>
             </li>
           </ul>
           </nav>
       </div>
-
-      <div class="content-aa">
+      <div class="content-origin">
         {% block content %}
         {% endblock content %}
       </div>

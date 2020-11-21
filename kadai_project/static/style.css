@@ -3,69 +3,89 @@ body {
   height: 100%;
 }
 
-body {
- 
+.container-layout {
+  background-color: #2792c3;
+  height: 100%;
 }
 
-.header-title{
-  color:black;
+ /*ヘッダー-------------------------------------------------------------------------------------------------------------------------*/
+
+
+ .header-title {
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size:50px ;
-  background-color:#cc7eb1;
+  font-size: 50px;
+  background-color: #cc7eb1;
   height: 100px;
   font-weight: bold;
-  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   -webkit-text-stroke: 1px #FFF;
-  text-stroke: 1px #FFF;
-
 }
 
-.container-layout{
-  background-color: #2792c3;
-}
 
-.navi-layout{
-  height:620px;
+ /*サイドメニュー-------------------------------------------------------------------------------------------------------------------------*/
+.navi-layout {
+  height: 620px;
   width: 200px;
-  background-color:#4a488c;
-  color:black;
+  background-color: #4a488c;
+  color: black;
 }
 
-.navi-layout .navi-fontcolor1{
-  color:white ;
+.navi-layout .navi-fontcolor1 {
+  color: white;
   font-size: 30px;
-  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
-.navi-layout .navi-fontcolor2{
-  color:white ;
+.navi-layout .navi-fontcolor2 {
+  color: white;
   font-size: 15px;
-  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
-.form-area{
-margin: 50px 50px;
-
-}
-
-.container-original{
+.container-original {
   display: flex;
 }
 
-.content{
+.content-origin {
   flex: 1;
 }
 
-.control{
-margin: 51px 0;
-font-size: 30px;
-display: flex;
-align-items: center; /* 高さに合わせてボックスの上下中央に配置 */
+/*登録画面-------------------------------------------------------------------------------------------------------------------------*/
+.form-area {
+  margin: 50px 50px;
+  width: 55%;
 }
 
-.padding-labelinput{
-  padding-right:30px;
+.form-area .control {
+  margin: 31px 0;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  /* 高さに合わせてボックスの上下中央に配置 */
+}
+
+.form-area .padding-labelinput {
+  padding-right: 30px;
+}
+
+.form-area .table-origin {
+  width: 1000px;
+  margin: 90px 50px;
+  text-align: center;
+}
+
+.form-area .btn-origin{
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+
+/*登録画面-------------------------------------------------------------------------------------------------------------------------*/
+
+.table-white {
+  background-color: white;
 }
 
