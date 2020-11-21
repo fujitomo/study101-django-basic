@@ -1,9 +1,20 @@
-from django.shortcuts import render
+from .models import KimetsuCharactorModel
+from django.views.generic import CreateView, ListView
+from django.urls import reverse_lazy
+from .forms import KimetsuCharactorForm
 
 
-def createView(request):
-    return render(request, 'create.html')
+class CharactorCreaterView(CreateView):
+    """鬼滅の刃キャラクター登録View"""
+    template_name = 'create.html'
+    model = KimetsuCharactorModel
+    form_class = KimetsuCharactorForm
+    success_url = reverse_lazy('list')
 
 
-def listView(request):
-    return render(request, 'list.html')
+class CharactorListView(ListView):
+    """鬼滅の刃キャラクター一覧View"""
+    template_name = 'list.html'
+
+    def get_queryset(self):
+        return KimetsuCharactorModel.objects.all()
