@@ -6,9 +6,9 @@ from .forms import KimetsuCharactorForm
 
 class CharactorCreaterView(CreateView):
     """鬼滅の刃キャラクター登録View"""
-    template_name = 'create.html'
     model = KimetsuCharactorModel
     form_class = KimetsuCharactorForm
+    template_name = 'create.html'
     success_url = reverse_lazy('list')
 
 

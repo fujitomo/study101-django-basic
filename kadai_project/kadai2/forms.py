@@ -18,4 +18,5 @@ class KimetsuCharactorForm(forms.ModelForm):
 
     class Meta:
         model = KimetsuCharactorModel
-        fields = ()  # TODO : このコードがないとエラーが発生する
+        # TODO : このコードがないとエラーが発生する
+        fields = ('name', 'sex_id', 'characteristic')
